@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-roboto
+  }
+  html,body {
+    @apply overflow-x-hidden
+  }
+  [x-cloak] { display: none !important; }
+}
+
+@layer components {
+  .shape {
+    @apply absolute w-full h-96 bg-black bottom-0 left-0;
+    clip-path: polygon(100% 10%, 0% 100%, 100% 100%);
+  }
+}
+

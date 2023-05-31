@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noibit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <header
+      class="bg-gradient-to-b from-purple-400 to-purple-800 p-6 md:py-10 relative"
+    >
+      <nav
+        class="max-w-6xl mx-auto text-white flex items-center justify-between mb-16 lg:mb-32 flex-wrap"
+        x-data="{ menuOpen: false }"
+      >
+        <img src="/images/logo.png" alt="" />
+        <button type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 256 256"
+            fill="#ffffff"
+            class="lg:hidden"
+            x-show="!menuOpen"
+            @click="menuOpen = true"
+          >
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ffffff"
+            viewBox="0 0 256 256"
+            class="lg:hidden"
+            x-show="menuOpen"
+            x-cloak
+            @click="menuOpen = false"
+          >
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            ></path>
+          </svg>
+        </button>
+        <ul
+          class="text-xl flex flex-col lg:flex-row gap-6 lg:gap-10 font-thin lg:!flex w-full lg:w-auto mt-12 lg:mt-0"
+          x-show="menuOpen"
+        >
+          <li>
+            <a href="" class="hover:opacity-70 transition">DevOps / Cloud</a>
+          </li>
+          <li>
+            <a href="" class="hover:opacity-70 transition">Security</a>
+          </li>
+          <li>
+            <a href="" class="hover:opacity-70 transition">Partnerships</a>
+          </li>
+          <li>
+            <a href="" class="hover:opacity-70 transition">Hiring / Jobs</a>
+          </li>
+          <li>
+            <a href="" class="hover:opacity-70 transition">Events</a>
+          </li>
+          <li>
+            <a href="" class="hover:opacity-70 transition">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="max-w-6xl mx-auto md:px-12 z-10 relative">
+        <div class="max-w-[640px] space-y-8 mb-12 lg:mb-24">
+          <h1 class="text-white font-bold text-6xl">
+            Security Through<br />
+            Intelligent Automation
+          </h1>
+          <p class="text-blue text-3xl">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+          <p class="text-gray-400 text-2xl font-light">
+            Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
+            ultricies, purus lectus malesuada libero, sit amet commodo magna
+            eros quis urna.
+          </p>
+        </div>
+        <div class="flex gap-10">
+          <a
+            href=""
+            class="inline-flex py-3 px-8 bg-blue hover:bg-blue/90 text-white font-bold transition"
+            >Let’s have coffee</a
+          >
+          <a
+            href=""
+            class="inline-flex py-3 px-8 bg-purple-500 hover:bg-purple-500/90 text-white font-bold transition"
+            >I need more info</a
+          >
+        </div>
+        <img
+          src="/images/hero.png"
+          alt=""
+          class="mx-auto lg:absolute -right-20 -top-28 lg:scale-75 xl:scale-100"
+        />
+      </div>
+      <div class="shape"></div>
+    </header>
+    <section class="py-24 px-6 lg:pb-40">
+      <div class="max-w-[920px] mx-auto mb-48">
+        <ul class="flex gap-8 md:gap-0 flex-col md:flex-row md:justify-between">
+          <li class="text-center space-y-4 flex-1">
+            <div class="text-purple-500 font-bold text-6xl">55486</div>
+            <div class="text-white text-4xl font-light tracking-tight">
+              energy drinks
+            </div>
+          </li>
+          <li class="text-center space-y-4 flex-1">
+            <div class="text-purple-500 font-bold text-6xl">12+</div>
+            <div class="text-white text-4xl font-light tracking-tight">
+              years of experience
+            </div>
+          </li>
+          <li class="text-center space-y-4 flex-1">
+            <div class="text-purple-500 font-bold text-6xl">365</div>
+            <div class="text-white text-4xl font-light tracking-tight">
+              customers
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div
+          class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-0 w-full max-w-[1380px]"
+        >
+          <img src="/images/bg.png" alt="" class="object-cover" />
+        </div>
+        <h2 class="text-center uppercase text-blue text-lg mb-4 font-medium">
+          WHO WE ARE
+        </h2>
+        <h3
+          class="text-center text-white font-bold text-4xl max-w-[720px] mx-auto mb-14"
+        >
+          Cyber security experts with a strong base of industry experience and
+          expertise
+        </h3>
+        <article
+          class="text-gray-500 text-center text-2xl space-y-6 max-w-6xl mx-auto mb-16 font-light"
+        >
+          <p>
+            We use the latest techniques and knowledge, utilizing our
+            multi-disciplinary team, to help our Clients transform to the
+            Digital Age with confidence and resilience.
+          </p>
+          <p>
+            We aim to be a real trusted partner to our global Clients with a
+            strong base of industry experience and expertise which is critical
+            when facing the complex and fast paced changes of today's
+            cybersecurity challenges.
+          </p>
+          <p>
+            Our team is a diverse pool of security talent from all over the
+            world, working together as one to be the delivery specialists of
+            today and the security leaders of tomorrow.
+          </p>
+        </article>
+        <ul
+          class="flex flex-col gap-10 md:flex-row md:justify-between text-white font-medium text-2xl max-w-4xl mx-auto text-center"
+        >
+          <li class="flex-1">
+            <div class="flex justify-center items-center h-32 mb-6">
+              <img src="/images/icon-1.png" alt="" />
+            </div>
+            <div>
+              Global support<br />
+              24/7 x 365
+            </div>
+          </li>
+          <li class="flex-1">
+            <div class="flex justify-center items-center h-32 mb-6">
+              <img src="/images/icon-2.png" alt="" />
+            </div>
+            <div>
+              Full incident<br />
+              response
+            </div>
+          </li>
+          <li class="flex-1">
+            <div class="flex justify-center items-center h-32 mb-6">
+              <img src="/images/icon-3.png" alt="" />
+            </div>
+            <div>
+              Automation of tasks<br />
+              and tooling
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
